@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { font-family: 'Inter', system-ui, sans-serif; }
+
+  body {
+    background-color: #faf7f4;
+    color: #3d3028;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::-webkit-scrollbar        { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track  { background: #f5f0ea; }
+  ::-webkit-scrollbar-thumb  { background: #d9cdbf; border-radius: 999px; }
+  ::-webkit-scrollbar-thumb:hover { background: #b8a994; }
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl border border-warm-200 bg-white shadow-sm;
+    transition: box-shadow 0.2s ease;
+  }
+  .card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.07); }
+
+  .btn-primary {
+    @apply px-6 py-3 rounded-xl font-display font-semibold text-sm text-white;
+    background: linear-gradient(135deg, #e07a5f, #e6a54a);
+    box-shadow: 0 4px 14px rgba(224,122,95,0.35);
+    transition: all 0.2s;
+  }
+  .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(224,122,95,0.45); }
+  .btn-primary:active { transform: translateY(0); }
+
+  .btn-secondary {
+    @apply px-6 py-3 rounded-xl font-display font-semibold text-sm border;
+    background: rgba(235,227,217,0.5);
+    color: #5c524a;
+    border-color: #d9cdbf;
+    transition: all 0.2s;
+  }
+  .btn-secondary:hover { background: rgba(235,227,217,0.9); border-color: #b8a994; }
+
+  .nav-link {
+    @apply px-3 py-2 rounded-lg text-sm font-display font-semibold transition-all;
+    color: #9a8b78;
+  }
+  .nav-link:hover { color: #3d3028; background: rgba(235,227,217,0.6); }
+  .nav-link.active { color: #e07a5f; background: rgba(224,122,95,0.1); }
+
+  .section-label {
+    @apply text-xs font-display font-semibold uppercase tracking-wider;
+    color: #9a8b78;
+  }
+}

@@ -1,0 +1,9 @@
+﻿--- Diagnostics Start ---
+TensorFlow Version: 2.20.0
+tf-keras Version: 2.20.1
+Transformers Version: 4.38.0
+is_tf_available(): True
+
+--- Attempting model import ---
+TFDistilBertForSequenceClassification import SUCCESS
+--- Diagnostics End ---

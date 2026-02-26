@@ -1,0 +1,9 @@
+﻿--- Diagnostics Start ---
+TensorFlow Version: 2.20.0
+tf-keras Version: 2.20.1
+Transformers Version: 5.2.0
+Transformers basic import failed
+
+--- Attempting model import ---
+ImportError: cannot import name 'TFDistilBertForSequenceClassification' from 'transformers' (c:\Users\princ\sentiment-dashboard\venv\Lib\site-packages\transformers\__init__.py)
+--- Diagnostics End ---
